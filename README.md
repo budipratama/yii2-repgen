@@ -22,10 +22,27 @@ or add
 to the require section of your `composer.json` file.
 
 
-Usage
------
 
-Once the extension is installed, simply use it in your code by  :
+Basic Configuration
+-------------------
+
+Once the extension is installed, simply modify your application configuration as follows:
 
 ```php
-<?= \budipratama\repgen\AutoloadExample::widget(); ?>```
+return [
+    'modules' => [
+        'report-generator' => [
+            'class' => '\budipratama\repgen\Module',
+            ...
+        ],
+        ...
+    ],
+    
+];
+
+
+```
+You can then access the following URL:
+
+```
+http://localhost/path/to/index.php?r=report-generator
