@@ -10,7 +10,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist budipratama/yii2-repgen "*"
+php composer.phar require --prefer-dist budipratama/yii2-repgen "dev-master"
 ```
 
 or add
